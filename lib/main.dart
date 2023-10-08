@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' ;
 import 'package:portfolio_app/navbar.dart';
 
 
@@ -25,7 +25,7 @@ class Home extends StatelessWidget {
           children: [
             Container(
               alignment: Alignment.center,
-              child: Image.asset('assets/images/pic1.jpg', fit: BoxFit.fill,height: double.infinity,),
+              child: Image.asset('assets/images/pic1.jpg', fit: BoxFit.fill,height: double.infinity,width: double.infinity,),
             ),
 
             Container(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Socials extends StatelessWidget {
   const Socials({super.key});
@@ -28,7 +29,8 @@ class Socials extends StatelessWidget {
                     width: 200.0,
                     height: 100.0,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () { launch('https://github.com/SahilSrvstv/');
+                      },
                       child: Text('GitHub',style: TextStyle(fontSize: 40),),
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
@@ -43,7 +45,7 @@ class Socials extends StatelessWidget {
                     width: 200.0,
                     height: 100.0,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {launch('https://www.linkedin.com/in/sahil-srivastava-7a048a247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app');},
                       child: Text('LinkedIn',style: TextStyle(fontSize: 40),),
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
@@ -58,7 +60,7 @@ class Socials extends StatelessWidget {
                     width: 200.0,
                     height: 100.0,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () { launch('https://instagram.com/sahil_sri30?igshid=NGVhN2U2NjQ0Yg==');},
                       child: Text('Instagram',style: TextStyle(fontSize: 35),),
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
@@ -73,7 +75,7 @@ class Socials extends StatelessWidget {
                     width: 200.0,
                     height: 100.0,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () { launch('https://x.com/SahilSriva85665?t=vrNsh7H51ABktO44cR04oA&s=08');},
                       child: Text('Twitter',style: TextStyle(fontSize: 40),),
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
