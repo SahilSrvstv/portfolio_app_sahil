@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_app/About.dart';
-import 'package:portfolio_app/Education.dart';
 import 'package:portfolio_app/TechSkills.dart';
 import 'package:portfolio_app/Socials.dart';
+import 'package:portfolio_app/contact.dart';
 
 
 class NavBar extends StatelessWidget {
@@ -10,7 +10,7 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
+    return Drawer(backgroundColor: Color.fromARGB(255, 203, 170, 249),
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
@@ -34,16 +34,8 @@ class NavBar extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-            leading: Icon(Icons.book),
-            title: Text('Education'),
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Education()));
-            },
-          ),
-          Divider(),
-          ListTile(
             leading: Icon(Icons.computer),
-            title: Text('Technical Skills'),
+            title: Text('Projects'),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => TechSkills()));
             }
@@ -56,6 +48,15 @@ class NavBar extends StatelessWidget {
               Navigator.push(context, MaterialPageRoute(builder: (context) => Socials()));
             },
           ),
+          Divider(),
+          ListTile(
+            leading: Icon(Icons.phone),
+            title: Text('Contact Me'),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => contact()));
+            },
+          ),
+
         ],
       ),
     );

@@ -8,15 +8,15 @@ class Socials extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Socials'),
+        title: Text('Socials',style: TextStyle(color: Colors.white,)),
         centerTitle: true,
-        backgroundColor: Colors.black54,
+        backgroundColor: Color.fromARGB(255, 5, 89, 179),
       ),
       body: Center(
         child: Stack(
           children: [
             Container(
-              child: Image.asset('assets/images/wall1.webp',fit: BoxFit.fill, height: double.infinity,width: double.infinity,),
+              color: Color.fromARGB(255, 220, 237, 254),
             ),
             Align(
               alignment: Alignment.center,
@@ -36,7 +36,7 @@ class Socials extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0),
                         ),
-                        backgroundColor: Colors.black54,
+                        backgroundColor: Color.fromARGB(255, 86, 157, 250),
                       ),
                     ),
                   ),
@@ -51,7 +51,7 @@ class Socials extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0),
                         ),
-                        backgroundColor: Colors.black54,
+                        backgroundColor: Color.fromARGB(255, 86, 157, 250),
                       ),
                     ),
                   ),
@@ -66,7 +66,7 @@ class Socials extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0),
                         ),
-                        backgroundColor: Colors.black54,
+                        backgroundColor: Color.fromARGB(255, 86, 157, 250),
                       ),
                     ),
                   ),
@@ -75,13 +75,13 @@ class Socials extends StatelessWidget {
                     width: 200.0,
                     height: 100.0,
                     child: ElevatedButton(
-                      onPressed: () { launch('https://x.com/SahilSriva85665?t=vrNsh7H51ABktO44cR04oA&s=08');},
+                      onPressed: () { launch('https://x.com/SahilSrvstv?t=e4v6XZ5hISPoFF9UG1tilw&s=08');},
                       child: Text('Twitter',style: TextStyle(fontSize: 40),),
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0),
                         ),
-                        backgroundColor: Colors.black54,
+                        backgroundColor: Color.fromARGB(255, 86, 157, 250),
                       ),
                     ),
                   ),
