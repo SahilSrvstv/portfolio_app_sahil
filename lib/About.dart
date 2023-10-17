@@ -8,43 +8,44 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 220, 237, 254),
+      backgroundColor: const Color.fromARGB(255, 246, 246, 246),
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 5, 89, 179),
-        title: Text('About'),
+        backgroundColor: const Color.fromARGB(255, 171, 86, 250),
+        title: const Text('About'),
         centerTitle: true,
       ),
       body: Stack(
         children: [
           //BAckground TExt
           Container(
-            margin: EdgeInsets.only(left: 10,right: 10,top: 30),
+            margin: const EdgeInsets.only(left: 10,right: 10,top: 30),
             alignment: Alignment.topCenter,
-            child: Text('NAME: SAHIL SRIVASTAVA\nBRANCH: CSE(AI&ML)\nCOLLEGE:AKGEC\n\nHi, I am an App Developer at Team Conatus',
+            child: const Text('NAME: SAHIL SRIVASTAVA\nBRANCH: CSE(AI&ML)\nCOLLEGE:AKGEC',
               style: TextStyle(
-                color: Colors.black54,
+                color: Colors.black,
                 fontSize: 30,
                 fontWeight: FontWeight.bold,),textAlign: TextAlign.center,),
           ),
           Padding(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: ListWheelScrollView(
               itemExtent: 200,
-              physics: FixedExtentScrollPhysics(),
 
-              diameterRatio: 3,
+              physics: const FixedExtentScrollPhysics(),
+
+              diameterRatio: 4,
               children: [
                 //BOX1
                 Container(
                   height: 150,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 15, 89, 179),
+                    color: const Color.fromARGB(255, 171, 86, 250),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Container(
                     alignment: Alignment.center,
-                    child: Text('Technical Skills',
+                    child: const Text('Technical Skills',
                       style: TextStyle(
                           fontSize: 40,
                           fontWeight: FontWeight.bold,
@@ -57,20 +58,21 @@ class About extends StatelessWidget {
                   height: 150,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 170, 210, 253),
+                    color: const Color.fromARGB(255, 243, 200, 255),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Stack(
                     children: [
                       Container(
-                          margin: EdgeInsets.only(left: 20,right: 20,top: 10),
+                          margin: const EdgeInsets.only(left: 20,right: 20,top: 10),
                           alignment: Alignment.topLeft,
-                          child: Text('APP DEVELOPEMENT',
-                            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30),)
+                          child: const Text('APP DEVELOPEMENT',
+                            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 25),)
                       ),
                       Container(
+                        padding: EdgeInsets.only(left: 10,right: 5,),
                           alignment: Alignment.center,
-                          child: Text('-> Cross platform Developement using Flutter.\n-> Android Development using Kotlin.\n->IOS Development using Swift',
+                          child: const Text('-> Cross platform Developement using Flutter.\n-> Android Development using Kotlin.\n->IOS Development using Swift',
                             style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),)
                       )
                     ],
@@ -81,20 +83,21 @@ class About extends StatelessWidget {
                   height: 150,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 170, 210, 253),
+                    color: const Color.fromARGB(255, 243, 200, 255),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Stack(
                     children: [
                       Container(
-                        margin: EdgeInsets.all(20),
+                        margin: const EdgeInsets.all(20),
                           alignment: Alignment.topLeft,
-                          child: Text('WEB DEVELOPEMENT',
-                            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30),)
+                          child: const Text('WEB DEVELOPEMENT',
+                            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 25),)
                       ),
                       Container(
+                          padding: EdgeInsets.only(left: 10,right: 5,),
                           alignment: Alignment.centerLeft,
-                          child: Text('-> HTML5, CCS, JavaScript\n-> NodeJS, React, SQL',
+                          child: const Text('-> HTML5, CCS, JavaScript\n-> NodeJS, React, SQL',
                             style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),)
                       )
                     ],
@@ -106,10 +109,10 @@ class About extends StatelessWidget {
                   height: 150,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 15, 89, 179),
+                    color: const Color.fromARGB(255, 171, 86, 250),
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  child: Text('Education',
+                  child: const Text('Education',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
@@ -122,19 +125,20 @@ class About extends StatelessWidget {
                   height: 150,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 170, 210, 253),
+                    color: const Color.fromARGB(255, 243, 200, 255),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Stack(
                     children: [
                       Container(
-                          alignment: Alignment.topLeft,
-                          child: Text('College',
+                          alignment: Alignment(-.9,-.9),
+                          child: const Text('College',
                             style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30),)
                       ),
                       Container(
+                          padding: EdgeInsets.only(left: 10,right: 5,),
                           alignment: Alignment.centerLeft,
-                          child: Text('-> SGPA: 9.09\n-> Percentage: 90%\nApp Developer at Conatus using Flutter and Kotlin',
+                          child: const Text('-> SGPA: 9.09\n-> Percentage: 90%\nApp Developer at Conatus using Flutter and Kotlin',
                             style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),)
                       )
                     ],
@@ -145,19 +149,20 @@ class About extends StatelessWidget {
                     height: 150,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 170, 210, 253),
+                      color: const Color.fromARGB(255, 243, 200, 255),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child:  Stack(
                       children: [
                         Container(
-                            alignment: Alignment.topLeft,
-                            child: Text('Grade:- 12\u1d57\u02b0',
+                            alignment: Alignment(-.9,-.9),
+                            child: const Text('Grade:- 12\u1d57\u02b0',
                               style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30),)
                         ),
                         Container(
+                            padding: EdgeInsets.only(left: 10,right: 5,),
                             alignment: Alignment.center,
-                            child: Text('-> Percentage:- 95.0%\n-> Extra-Curricular:- Member of MUN ',
+                            child: const Text('-> Percentage:- 95.0%\n-> Extra-Curricular:- Member of MUN ',
                               style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),)
                         )
                       ],
@@ -165,22 +170,24 @@ class About extends StatelessWidget {
                 ),
                 //BoX7
                 Container(
+                  padding: EdgeInsets.only(left: 0),
                     height: 150,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 170, 210, 253),
+                      color: const Color.fromARGB(255, 243, 200, 255),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child:  Stack(
                       children: [
                         Container(
-                            alignment: Alignment.topLeft,
-                            child: Text('Grade:- 10\u1d57\u02b0',
+                            alignment: Alignment(-.9,-.9),
+                            child: const Text('Grade:- 10\u1d57\u02b0',
                               style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30),)
                         ),
                         Container(
                             alignment: Alignment.center,
-                            child: Text('-> Percentage:- 92.5%\n-> Extra-Curricular:- Member of ICJ ',
+                            padding: EdgeInsets.only(left: 10,right: 5,),
+                            child: const Text('-> Percentage:- 92.5%\n-> Extra-Curricular:- Member of ICJ ',
                               style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),)
                         )
                       ],

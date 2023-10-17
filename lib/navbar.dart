@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_app/About.dart';
 import 'package:portfolio_app/TechSkills.dart';
 import 'package:portfolio_app/Socials.dart';
-import 'package:portfolio_app/contact.dart';
+
 
 
 class NavBar extends StatelessWidget {
@@ -21,9 +21,8 @@ class NavBar extends StatelessWidget {
                 child: ClipOval(child: Image.asset('assets/images/prof1.jpeg',fit: BoxFit.fill, width: double.infinity)),
               ),
             decoration: BoxDecoration(
-              color: Colors.purpleAccent,
-              image: DecorationImage(image: AssetImage('assets/images/pic2.webp'), fit: BoxFit.cover)
-            ),
+              color: Color.fromARGB(255, 171, 86, 250),
+              ),
           ),
           ListTile(
             leading: Icon(Icons.account_circle),
@@ -48,14 +47,14 @@ class NavBar extends StatelessWidget {
               Navigator.push(context, MaterialPageRoute(builder: (context) => Socials()));
             },
           ),
-          Divider(),
-          ListTile(
+          //Divider(),
+          /*ListTile(
             leading: Icon(Icons.phone),
             title: Text('Contact Me'),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => contact()));
             },
-          ),
+          ),*/
 
         ],
       ),
