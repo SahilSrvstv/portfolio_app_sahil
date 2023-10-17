@@ -14,17 +14,17 @@ class MyHome extends StatefulWidget {
 }
 
 class _MyHomeState extends State<MyHome> {
-  final Shader headerGradient = LinearGradient(colors: <Color>[
+  final Shader headerGradient = const LinearGradient(colors: <Color>[
     Color.fromARGB(255, 218, 124, 248),
     Color.fromARGB(255, 130, 96, 255)
   ]).createShader(Rect.fromLTWH(0, 0, 200.0, 70.0));
 
-  final Shader highlightGradient = LinearGradient(colors: <Color>[
+  final Shader highlightGradient = const LinearGradient(colors: <Color>[
     Color.fromARGB(255, 244, 242, 1),
     Color.fromARGB(255, 255, 136, 0)
   ]).createShader(Rect.fromLTWH(0, 0, 200.0, 70.0));
 
-  final Shader OverallTextGradient= LinearGradient(colors: <Color>[
+  final Shader OverallTextGradient= const LinearGradient(colors: <Color>[
     Color (0xff7b3ff6),
     Color (0xffe551f1),
     Color(0xffe138b0),
@@ -41,14 +41,14 @@ class _MyHomeState extends State<MyHome> {
       width: 105,
       height: 115,
       child: Card(
-        margin: EdgeInsets.all(0),
+        margin: const EdgeInsets.all(0),
         color: Colors.black54,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         child: Container(
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
             Icon(icon, color: Colors.white,),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             Text(text, style: TextStyle(foreground: Paint()..shader = OverallTextGradient, fontSize: 16,),)
           ],),
         ),
@@ -61,10 +61,10 @@ class _MyHomeState extends State<MyHome> {
     return Scaffold(
       backgroundColor: Colors.black54,
       //extendBodyBehindAppBar: true,
-      drawer: NavBar(),
+      drawer: const NavBar(),
         appBar: AppBar(
-          title: Text("Porfolio"),
-          backgroundColor: Color.fromARGB(255, 70, 11, 152),
+          title: const Text("Porfolio"),
+          backgroundColor: const Color.fromARGB(255, 70, 11, 152),
           centerTitle: true,
         ),
         body: Stack(
@@ -75,7 +75,7 @@ class _MyHomeState extends State<MyHome> {
                   Container(
                     child: ShaderMask(
                       shaderCallback: (bound){
-                        return LinearGradient(
+                        return const LinearGradient(
                           begin: Alignment.center,
                           end: Alignment.bottomCenter,
                           colors: [Colors.black,Colors.transparent]
@@ -99,7 +99,7 @@ class _MyHomeState extends State<MyHome> {
                             fontSize: 40,
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 4,
                       ),
                       Text('App Developer',
@@ -108,7 +108,7 @@ class _MyHomeState extends State<MyHome> {
                             fontSize: 28,
                             ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 4,
                       ),
                       Text('CSE(AI & ML)',
@@ -116,7 +116,7 @@ class _MyHomeState extends State<MyHome> {
                           foreground: Paint()..shader=headerGradient,
                           fontSize: 28,
                         ),),
-                      SizedBox(
+                      const SizedBox(
                         height: 4,
                       ),
                       Text('Member of Team CONATUS',
@@ -134,23 +134,23 @@ class _MyHomeState extends State<MyHome> {
             ),*/
 
             SlidingUpPanel(
-              color: Color.fromARGB(255, 70, 11, 152),
+              color: const Color.fromARGB(255, 70, 11, 152),
               panel: Container(
-                margin: EdgeInsets.only(left: 20, right: 20, top: 40),
+                margin: const EdgeInsets.only(left: 20, right: 20, top: 40),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
 
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Text('Specialized In',style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, foreground: Paint()..shader=highlightGradient,)),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     Column(
@@ -163,7 +163,7 @@ class _MyHomeState extends State<MyHome> {
                             mySpecialization(FontAwesomeIcons.python, 'Python'),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                         Row(
@@ -174,7 +174,7 @@ class _MyHomeState extends State<MyHome> {
                             mySpecialization(FontAwesomeIcons.nodeJs, 'Node.JS'),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                         Row(
@@ -185,7 +185,7 @@ class _MyHomeState extends State<MyHome> {
                             mySpecialization(FontAwesomeIcons.html5, 'HTML5'),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                       ],
@@ -196,7 +196,7 @@ class _MyHomeState extends State<MyHome> {
               ),
               minHeight: 100,
               maxHeight: 500,
-              borderRadius: BorderRadius.only(topLeft: Radius.circular(30),topRight: Radius.circular(30)),
+              borderRadius: const BorderRadius.only(topLeft: Radius.circular(30),topRight: Radius.circular(30)),
             )
           ],
         )
